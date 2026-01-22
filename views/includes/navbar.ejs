@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light border-bottom sticky-top shadow-sm">
+  <div class="container-fluid">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="/listing">
+      <i class="fa-solid fa-compass me-2"></i>ExploreIt
+    </a>
+
+    <!-- Toggle button for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="/listing">Home</a>
+        <!-- <a class="nav-link" href="/listing">All Listings</a> -->
+        <!-- <a class="nav-link" href="/listing/new">Add New Listing</a> -->
+      </div>
+
+      <!-- Auth buttons aligned right -->
+      <div class="navbar-nav ms-auto">
+        <% if (!currUser) { %>
+          <a class="nav-link" href="/signup"><i class="fa-solid fa-user-plus me-1"></i>Sign Up</a>
+          <a class="nav-link" href="/login"><i class="fa-solid fa-right-to-bracket me-1"></i>Log In</a>
+        <% } else { %>
+          <a class="nav-link" href="/logout"><i class="fa-solid fa-right-from-bracket me-1"></i>Log Out</a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</nav>

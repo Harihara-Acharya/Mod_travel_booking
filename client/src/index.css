@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital@0;1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  max-width: 1200px;
+}
+
+/* Navbar Styles */
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+
+.fa-compass {
+  color: #fe4242;
+  font-size: 2.5rem;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fe4242 !important;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: black !important;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #fe4242 !important;
+}
+
+/* Footer Styles */
+.footer {
+  margin-top: auto;
+  background: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+  padding: 1.5rem 0 0.5rem 0;
+}
+
+.f-info-links,
+.f-info-social,
+.f-info-companyname {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+  margin-right: 1.2rem;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-social a {
+  font-size: 1.5rem;
+  color: #222222;
+  margin-right: 1.6rem;
+}
+
+.f-info-companyname {
+  font-weight: 600;
+  color: #fe4242;
+  margin-bottom: 0.5rem;
+}
+
+/* Listing Card Styles */
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 1rem !important;
+}
+
+.listing-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+}
+
+.listing-a-tag {
+  text-decoration: none !important;
+}
+
+/* Button Styles */
+.add-btn,
+.edit-btn,
+.btn-dark {
+  background-color: #fe4242 !important;
+  border: none !important;
+  color: #fff !important;
+  font-weight: 600;
+  border-radius: 0.5rem !important;
+  transition: background 0.2s;
+}
+
+.add-btn:hover,
+.edit-btn:hover,
+.btn-dark:hover {
+  background-color: #d73737 !important;
+}
+
+/* Show Page Styles */
+.show-img {
+  height: 40vh !important;
+  object-fit: cover;
+}
+
+.show-edit-a-tag {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.show-bts {
+  display: flex;
+  margin-top: 1rem;
+}
+
+/* Alert Styles */
+.alert {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Card Hover Effect */
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 1rem !important;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+}
+
+/* Map Container */
+#map {
+  height: 300px;
+  border-radius: 1rem;
+}
+
+/* Star Rating Styles */
+.starability-heartbeat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.starability-heartbeat .form-check-inline {
+  margin-right: 0.5rem;
+}
+
+.starability-heartbeat .form-check-input {
+  display: none;
+}
+
+.starability-heartbeat label {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.starability-heartbeat label:hover,
+.starability-heartbeat label.active {
+  color: #fe4242;
+}
+
+/* Form Styles */
+.form-control:focus {
+  border-color: #fe4242;
+  box-shadow: 0 0 0 0.25rem rgba(254, 66, 66, 0.25);
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .fa-compass {
+    font-size: 2rem;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+  
+  .show-bts {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .show-bts .offset-1 {
+    margin-left: 0 !important;
+  }
+}
+
+/* Loading Spinner */
+.spinner-border {
+  color: #fe4242;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fe4242;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d73737;
+}
+
