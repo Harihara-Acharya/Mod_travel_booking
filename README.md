@@ -185,26 +185,7 @@ project/
 
 ---
 
-## 🔐 Environment Variables
 
-Create a `.env` file in the project root:
-
-```env
-# MongoDB Connection
-ATLASDB_URL=mongodb://127.0.0.1:27017/wonderlust
-# OR use MongoDB Atlas:
-# ATLASDB_URL=mongodb+srv://username:password@cluster.mongodb.net/wonderlust
-
-# Session Secret (any long random string)
-SECRET=your-super-secret-session-key-here
-
-# Cloudinary (for image uploads - optional)
-CLOUDINARY_CLOUD_NAME=your-cloud-name
-CLOUDINARY_KEY=your-api-key
-CLOUDINARY_SECRET=your-api-secret
-```
-
----
 
 ## 🌐 API Endpoints
 
